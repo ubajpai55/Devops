@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Application connector="sailpoint.connector.DelimitedFileConnector" featuresString="DIRECT_PERMISSIONS, NO_RANDOM_ACCESS, DISCOVER_SCHEMA" icon="enterpriseIcon" name="Test Delimited Application" profileClass="" type="DelimitedFile">
+  <Attributes>
+    <Map>
+      <entry key="compositeDefinition"/>
+      <entry key="delimiter" value=","/>
+      <entry key="file" value="C:\Users\hamehta\Desktop\testFile.csv"/>
+      <entry key="filetransport" value="local"/>
+      <entry key="filterEmptyRecords">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="group.filetransport" value="local"/>
+      <entry key="group.filterEmptyRecords">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="group.partitionMode" value="auto"/>
+      <entry key="hasHeader">
+        <value>
+          <Boolean>true</Boolean>
+        </value>
+      </entry>
+      <entry key="isCaseInsensitiveMerge">
+        <value>
+          <Boolean></Boolean>
+        </value>
+      </entry>
+      <entry key="isSortedByIndexColumn">
+        <value>
+          <Boolean></Boolean>
+        </value>
+      </entry>
+      <entry key="mergeRows">
+        <value>
+          <Boolean></Boolean>
+        </value>
+      </entry>
+      <entry key="nativeChangeDetectionAttributeScope" value="entitlements"/>
+      <entry key="nativeChangeDetectionAttributes"/>
+      <entry key="nativeChangeDetectionEnabled">
+        <value>
+          <Boolean></Boolean>
+        </value>
+      </entry>
+      <entry key="nativeChangeDetectionOperations"/>
+      <entry key="parseType" value="delimited"/>
+      <entry key="partitionMode" value="auto"/>
+      <entry key="stopIfLineHasWrongColumnLength">
+        <value>
+          <Boolean></Boolean>
+        </value>
+      </entry>
+      <entry key="sysDescriptions">
+        <value>
+          <Map>
+            <entry key="en_US"/>
+          </Map>
+        </value>
+      </entry>
+      <entry key="templateApplication" value="DelimitedFile Template"/>
+    </Map>
+  </Attributes>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </Owner>
+  <ProvisioningForms>
+    <Form name="Create" objectType="account" type="Create">
+      <Attributes>
+        <Map>
+          <entry key="pageTitle" value="Create"/>
+        </Map>
+      </Attributes>
+      <Section name="Section 1">
+        <Field displayName="Organizationss" name="Organizationss" required="true" reviewRequired="true" value="ref:Organizationss">
+          <AllowedValues>
+            <String>India</String>
+            <String>Germany</String>
+            <String>Japan</String>
+            <String>China</String>
+          </AllowedValues>
+          <Attributes>
+            <Map>
+              <entry key="hidden">
+                <value>
+                  <Script>
+                    <Source>
+                import sailpoint.object.*;
+                import java.util.*;
+                  import org.apache.log4j.Logger;
+                      import sailpoint.api.*;
+                    
+                              Logger  logg = Logger.getLogger("com.rules");
+ 
+
+logg.debug("Inside Something");
+                // logg.debug(plan.toXml());
+ boolean hidden = false;
+                boolean flagCheck=false;
+
+                    /*
+                ProvisioningPlan planPO=project.getMasterPlan();
+                    log.debug(planPO.toXml());
+                List accReq=planPO.getAccountRequests();
+                for(AccountRequest temp:accReq)
+                {
+                  List attrReqs=temp.getAttributeRequests();
+                  for(AttributeRequest attr:attrReqs)
+                  {
+                      if(attr.getValue() instanceof java.lang.String)
+                      {
+                          if("role1".equalsIgnoreCase(attr.getValue()))
+                          {
+                              flagCheck=true;
+                          }
+                      }
+
+                  }
+                }
+                System.out.println(plan.toXml());
+                if(flagCheck)
+                {
+ 									form.getField("Organization").setMulti(true);
+                }
+                    */
+                    if(project!=null)
+                    {
+                   // form.getField("Organizationss").setMulti(true);
+                    }
+                    field.setMulti(true);
+ return hidden;
+ </Source>
+                  </Script>
+                </value>
+              </entry>
+            </Map>
+          </Attributes>
+        </Field>
+      </Section>
+    </Form>
+  </ProvisioningForms>
+  <Schemas>
+    <Schema displayAttribute="" identityAttribute="sso" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None">
+      <AttributeDefinition name="sso" type="string"/>
+      <AttributeDefinition entitlement="true" managed="true" multi="true" name="role" type="string"/>
+    </Schema>
+  </Schemas>
+</Application>
