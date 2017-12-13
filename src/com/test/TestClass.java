@@ -6,7 +6,7 @@ public class TestClass {
 
 	}
 	
-	public String callMe()
+	public static String callMe()
 	{
 		return "Hello World";
 	}
