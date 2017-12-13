@@ -4,7 +4,7 @@
   <Source>
  import com.test1.*;
    TestClass1 tc1 = new TestClass1();
-   return tc1.callMe();
+   return tc1.callMe1();
 
   </Source>
 </Rule>
