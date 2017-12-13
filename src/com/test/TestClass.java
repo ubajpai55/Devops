@@ -8,7 +8,7 @@ public class TestClass {
 	
 	public static String callMe()
 	{
-		return "Hello World 6:24";
+		return "Hello World 11:23";
 	}
 
 }
