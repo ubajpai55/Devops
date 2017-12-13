@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
-<Rule language="beanshell" name="Demo1 Custom Header Rule 1056">
+<Rule language="beanshell" name="Demo1 Custom Header Rule 11:06">
   <Source>
  import com.test1.*;
    TestClass1 tc1 = new TestClass1();
