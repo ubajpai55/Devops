@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
-<Rule language="beanshell" name="Demo1 Custom Header Rule 11:06">
+<Rule language="beanshell" name="Demo1 Custom Header Rule">
   <Source>
  import com.test1.*;
    TestClass1 tc1 = new TestClass1();
    return tc1.callMe1();
-
+//11:37
   </Source>
 </Rule>
