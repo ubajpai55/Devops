@@ -2,16 +2,9 @@
 <!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
 <Rule language="beanshell" name="Demo1 Custom Header Rule">
   <Source>
+ import com.test1.*;
+   TestClass1 tc1 = new TestClass1();
+   return tc1.callMe();
 
-	log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1);
-	log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1);
-	
-	log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1);
-	log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1);
-	log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1);
-    log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1);
-	  	
-    log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1);
-	  log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token12 4:00 1 );
   </Source>
 </Rule>
