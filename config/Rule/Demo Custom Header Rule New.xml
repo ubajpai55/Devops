@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule language="beanshell" name="Demo Custom Header Rule New">
+  <Source>
+
+import com.test.*;
+   TestClass tc = new TestClass();
+   return tc.callMe();
+  </Source>
+</Rule>
