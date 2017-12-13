@@ -6,5 +6,6 @@
 import com.test.*;
    TestClass tc = new TestClass();
    return tc.callMe();
+    //12:34
   </Source>
 </Rule>
