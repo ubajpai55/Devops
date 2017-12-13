@@ -3,17 +3,9 @@
 <Rule language="beanshell" name="Demo Custom Header Rule">
   <Source>
 
-	log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1);
-	log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1);
-	
-	log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1);
-	log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1);
-	log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1);
-    log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1);
-	  	
-    log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1);
-	  log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1);
-	  log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1);
-	   log.debug("Access token ifdfsgfsfsfsfsfsfsfd gdfgs" + access_token1 dev 3:59 );
+import com.test.*;
+   TestClass tc = new TestClass();
+   return tc.callMe();
+    //11:36
   </Source>
 </Rule>
