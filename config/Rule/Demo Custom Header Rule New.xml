@@ -3,9 +3,7 @@
 <Rule language="beanshell" name="Demo Custom Header Rule New">
   <Source>
 
-import com.test.*;
-   TestClass tc = new TestClass();
-   return tc.callMe();
-    //12:34
+
+    //10:47
   </Source>
 </Rule>
