@@ -2,7 +2,7 @@
 <!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
 <Application connector="sailpoint.connector.DelimitedFileConnector" featuresString="DIRECT_PERMISSIONS, NO_RANDOM_ACCESS, DISCOVER_SCHEMA" icon="enterpriseIcon" name="Test Delimited Application" profileClass="" type="DelimitedFile">
   <Attributes>
-    <Map
+    <Map>
       <entry key="compositeDefinition"/>
       <entry key="delimiter" value=","/>
       <entry key="file" value="C:\Users\hamehta\Desktop\testFile.csv"/>
