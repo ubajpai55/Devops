@@ -1,0 +1,13 @@
+version: 2
+jobs:
+   build:
+     docker:
+       - image: circleci/python:3.4
+     steps:
+       - checkout
+       - run: 
+           name: Install lxml
+           command: pip install --user lxml==3.6.0
+       - run:
+           name: Run test script
+           command: python /home/circleci/project/tests/test.py
