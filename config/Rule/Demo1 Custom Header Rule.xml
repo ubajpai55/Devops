@@ -5,6 +5,6 @@
  import com.test1.*;
    TestClass1 tc1 = new TestClass1();
    return tc1.callMe();
-
+//3:18
   </Source>
 </Rule>
