@@ -80,8 +80,7 @@
             <String>India</String>
             <String>Germany</String>
             <String>Japan</String>
-            <String>China</String>
-          </AllowedValues>
+           </AllowedValues>
           <Attributes>
             <Map>
               <entry key="hidden">
